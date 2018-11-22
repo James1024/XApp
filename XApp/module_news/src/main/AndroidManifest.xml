@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="colin.com.module.news">
+
+    <application android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.NewsCenterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".detail.NewsDetailActivity"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
