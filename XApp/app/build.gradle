@@ -70,6 +70,12 @@ android {
     }
 
 
+    lintOptions {
+        abortOnError false
+    }
+
+
+
 }
 
 dependencies {
@@ -78,6 +84,7 @@ dependencies {
     if (!isModule.toBoolean()) {
         implementation project(':module_main')
         implementation project(':module_news')
+        implementation project(':module_camera')
 
     }
     implementation project(':common')

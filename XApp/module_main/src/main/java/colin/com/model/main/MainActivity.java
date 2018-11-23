@@ -27,7 +27,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.news_button).setOnClickListener(this);
-        findViewById(R.id.girls_button).setOnClickListener(this);
+        findViewById(R.id.camera_button).setOnClickListener(this);
         findViewById(R.id.fragment_button).setOnClickListener(this);
     }
 
@@ -36,9 +36,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         if (view.getId() == R.id.news_button) {
             //跳转到NewsCenterActivity
             ARouter.getInstance().build("/news/center").navigation();
-        } else if (view.getId() == R.id.girls_button) {
-            //跳转到GirlsActivity
-            ARouter.getInstance().build("/girls/list").navigation();
+        } else if (view.getId() == R.id.camera_button) {
+            //跳转到CameraActivity
+            ARouter.getInstance().build("/camera/main").navigation();
         } else if (view.getId() == R.id.fragment_button) {
             startActivity(new Intent(this, BottomNavigationActivity.class));
         }

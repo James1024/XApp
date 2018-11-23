@@ -17,10 +17,10 @@
         android:text="News" />
 
     <Button
-        android:id="@+id/girls_button"
+        android:id="@+id/camera_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Girls" />
+        android:text="Camera" />
 
     <Button
         android:id="@+id/fragment_button"
