@@ -3,7 +3,7 @@ package debug;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import colin.com.module.camera.CameraActivity;
+import colin.com.module.camera.photo.CameraActivity;
 
 /**
  * <p>组件开发模式下，用于传递数据的启动Activity，集成模式下无效</p>

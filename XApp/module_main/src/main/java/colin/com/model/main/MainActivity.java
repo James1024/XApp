@@ -1,12 +1,16 @@
 package colin.com.model.main;
 
 import android.content.Intent;
+import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import colin.com.common.base.BaseActivity;
 import colin.com.common.base.ViewManager;
 import colin.com.common.utils.ToastUtils;
@@ -20,15 +24,27 @@ import colin.com.common.utils.ToastUtils;
  */
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
+    @BindView(R2.id.news_button)
+    Button newsButton;
+    @BindView(R2.id.camera_button)
+    Button cameraButton;
+    @BindView(R2.id.fragment_button)
+    Button fragmentButton;
+
     private long mExitTime = 0;
 
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        findViewById(R.id.news_button).setOnClickListener(this);
-        findViewById(R.id.camera_button).setOnClickListener(this);
-        findViewById(R.id.fragment_button).setOnClickListener(this);
+    public int getLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+        newsButton.setOnClickListener(this);
+        cameraButton.setOnClickListener(this);
+        fragmentButton.setOnClickListener(this);
     }
 
     @Override
@@ -60,4 +76,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         return super.onKeyDown(keyCode, event);
     }
 
+    public void OpenGL(View view) {
+        ARouter.getInstance().build("/opengl/main").navigation();
+    }
+    public void Opencv(View view) {
+        ARouter.getInstance().build("/opencv/main").navigation();
+    }
 }

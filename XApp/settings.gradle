@@ -1,1 +1,1 @@
-include ':app', ':common', ':module_main', ':module_news', ':module_camera'
+include ':app', ':common', ':module_main', ':module_news', ':module_camera', ':module_opencv', ':module_opengl'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="colin.com.module.opengl">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:theme="@style/AppTheme">
+        <activity android:name=".OpenGLMainActivity"/>
+        <activity android:name=".TriangleActivity" />
+        <activity android:name=".SquareActivity" />
+        <activity android:name=".CircleActivity" />
+        <activity android:name=".CubicActivity" />
+        <activity android:name=".EGLActivity" />
+    </application>
+</manifest>

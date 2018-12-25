@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion build_versions.target_sdk
@@ -67,5 +68,9 @@ dependencies {
     //annotationProcessor
     annotationProcessor deps.dagger.android_support_compiler
     annotationProcessor deps.dagger.compiler
+
+
+    api deps.butterknife_api
+    annotationProcessor deps.butterknife_compiler
     implementation files('libs/simple-xml-core.jar')
 }

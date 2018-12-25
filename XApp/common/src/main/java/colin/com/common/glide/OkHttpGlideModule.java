@@ -20,6 +20,7 @@ import com.bumptech.glide.module.GlideModule;
  * in by manifest merger. For other build systems or for more more information, see
  * {@link GlideModule}.
  * </p>
+ * @author yiche
  */
 public class OkHttpGlideModule implements GlideModule {
 

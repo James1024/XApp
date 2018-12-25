@@ -47,10 +47,15 @@ public class BottomNavigationActivity extends BaseActivity {
 
     };
 
+
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottom_navigation);
+    public int getLayout() {
+        return R.layout.activity_bottom_navigation;
+    }
+
+    @Override
+    public void initView() {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         initViewPager();

@@ -3,7 +3,7 @@ if (isModule.toBoolean()) {
 } else {
     apply plugin: 'com.android.library'
 }
-
+apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion build_versions.target_sdk
     defaultConfig {
@@ -49,5 +49,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     annotationProcessor deps.arouter_compiler
+    annotationProcessor deps.butterknife_compiler
     implementation project(':common')
 }

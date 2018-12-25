@@ -85,9 +85,11 @@ dependencies {
         implementation project(':module_main')
         implementation project(':module_news')
         implementation project(':module_camera')
-
+        implementation project(':module_opencv')
+        implementation project(':module_opengl')
     }
     implementation project(':common')
     implementation files('libs/acra-4.5.0.jar')
+    annotationProcessor deps.butterknife_compiler
 }
 

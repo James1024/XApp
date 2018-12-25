@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import butterknife.ButterKnife;
 import colin.com.common.R;
 import colin.com.common.utils.Utils;
 
@@ -36,6 +37,13 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ViewManager.getInstance().addActivity(this);
+        if(getLayout()!=-1){
+            setContentView(getLayout());
+            ButterKnife.bind(this);
+            initView();
+        }
+
+
     }
 
 
@@ -154,5 +162,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
+    public abstract int getLayout();
+
+    public abstract void initView();
 
 }

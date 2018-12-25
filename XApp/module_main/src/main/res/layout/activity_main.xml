@@ -28,4 +28,14 @@
         android:layout_height="wrap_content"
         android:text="Fragment" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OpenGL"
+        android:text="OpenGL" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Opencv"
+        android:text="Opencv" />
 </LinearLayout>

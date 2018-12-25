@@ -30,10 +30,15 @@ public class NewsCenterActivity extends BaseActivity {
     protected ViewPager mViewPager;
     private NewsListViewAdapter mListAdapter;
 
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_news);
+    public int getLayout() {
+        return R.layout.activity_news;
+    }
+
+    @Override
+    public void initView() {
         mToolBar = (Toolbar) findViewById(R.id.news_title_bar);
         mToolBar.setTitle("知乎日报");
         setupToolBar(mToolBar, false);

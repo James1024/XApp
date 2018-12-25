@@ -24,4 +24,14 @@ public class NewsDetailActivity extends BaseActivity {
         new NewsDetailPresenter(detailView).getNewsDetail(id);
     }
 
+    @Override
+    public int getLayout() {
+        return -1;
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
 }

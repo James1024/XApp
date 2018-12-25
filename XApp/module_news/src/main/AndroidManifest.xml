@@ -6,6 +6,7 @@
         <activity
             android:name=".main.NewsCenterActivity"
             android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="sensor" />
         <activity
             android:name=".detail.NewsDetailActivity"

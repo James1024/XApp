@@ -126,8 +126,15 @@ public class ImageUtils {
      * 加载bitmap回调
      */
     public interface onLoadBitmap {
+        /**
+         * 加载完成
+         * @param resource
+         */
         void onReady(Bitmap resource);
 
+        /**
+         * 加载失败
+         */
         void onFailed();
     }
 

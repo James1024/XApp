@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/module_camera" />
             <option value="$PROJECT_DIR$/module_main" />
             <option value="$PROJECT_DIR$/module_news" />
+            <option value="$PROJECT_DIR$/module_opencv" />
+            <option value="$PROJECT_DIR$/module_opengl" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -33,6 +33,8 @@ versions.material_dialog = "0.9.6.0"
 //Arouter
 versions.arouter_compiler = "1.1.4"
 versions.arouter_api = "1.3.1"
+versions.butterknife_compiler = "9.0.0-rc2"
+versions.butterknife_api = "9.0.0-rc2"
 
 
 
@@ -99,7 +101,8 @@ deps.toasty =  "com.github.GrenderG:Toasty:$versions.toasty"
 deps.logger = "com.orhanobut:logger:$versions.logger"
 deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
 deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
-
+deps.butterknife_api = "com.jakewharton:butterknife:$versions.butterknife_api"
+deps.butterknife_compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife_compiler"
 ext.deps = deps
 
 def build_versions = [:]
