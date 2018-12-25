@@ -62,6 +62,7 @@ public class EGLActivity extends BaseActivity implements SurfaceHolder.Callback 
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
+        TextView textView=new TextView(getApplicationContext());
 
     }
 
